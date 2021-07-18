@@ -368,6 +368,8 @@
         </div>
       </section>
     </main>
+
+
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container main-footer">
@@ -419,8 +421,27 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <p class="socials-text">Подпишитесь на рассылку</p>
+          <form class="subscribe-form js-speaker-form">
+            <input class="visually-hidden" type="email" name="email" alt="Подпишитесь на рассылку">
+            <input class="subscribe-input" type="email" name="email" placeholder="E-mail">
+            <button type="submit" class="subscribe-button" aria-label="Подписаться">
+              Подписаться
+              <svg class="icon-plane-send" width="24" height="24">
+                <use href="./images/svg/sprite.svg#icon-plane-send"></use>>
+              </svg>
+            </button>
+
+          </form>
+          
+        </div>
       </div>
     </footer>
+
+
+
+
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="close-button">
@@ -433,6 +454,10 @@
         </form>
       </div>
     </div>
+
+
+
+
     <script src="./js/modal.js"></script>
     <script>
       (() => {
