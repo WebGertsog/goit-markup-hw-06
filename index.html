@@ -421,7 +421,7 @@
           </div>
           <div class="footer-form">
             <p class="socials-text">Подпишитесь на рассылку</p>
-            <form class="subscribe-form js-speaker-form">
+            <form class="subscribe-form" autocomplete="off">
               <label class="visually-hidden" for="sub-email" alt="Подпишитесь на рассылку"></label>
               <input class="subscribe-input" type="email" name="email" id="sub-email" placeholder="E-mail" required>
               <button class="subscribe-button" type="submit" aria-label="Подписаться">
@@ -442,11 +442,42 @@
             <use href="./images/svg/sprite.svg#icon-cross"></use>
           </svg>
         </button>
-        <form action="">
-          <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+       
+        <form class="order-form" autocomplete="off">
+          <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+         
+          <div class="form-field">
+            <label class="form-lable" for="username">Имя</label>
+            <input class="form-input" type="text" id="username" name="name" required>
+          </div>
+
+          <div class="form-field">
+            <label class="form-lable" for="phone">Телефон</label>
+            <input class="form-input" type="tel" id="phone" name="phone"
+       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+       required>
+          </div>
+          <div class="form-field">
+            <label class="form-lable" for="email">Почта</label>
+            <input class="form-input" type="email" id="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label class="form-lable" for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+          </div>
+          <input type="checkbox" name="agreement" value="agreement" id="agreement">
+          <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+          <button type="submit" class="" aria-label="Отправить">Отправить</button>
         </form>
       </div>
     </div>
+
+
+
+
+
+
+
 
     <script src="./js/modal.js"></script>
     <script>

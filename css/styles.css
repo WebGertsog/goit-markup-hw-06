@@ -683,9 +683,9 @@ img {
 }
 
 /* -subscribe-form- */
+
 .subscribe-form{
   display: flex;
-  /* justify-content: center; */
 }
 .subscribe-input{
   width: 358px;
@@ -724,8 +724,6 @@ img {
   color: var(--accent-text-color);
 }
 
-
-/* ________________________________________________________ */
 .subscribe-button{
   display: flex;
   align-items: center;
@@ -787,7 +785,11 @@ img {
 
   width: 528px;
   height: 581px;
+  padding: 40px;
 
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   background: var(--main-bg-color);
 
   transform: translate(-50%, -50%) scale(1);
@@ -812,4 +814,38 @@ img {
 .icon-cross {
   padding: 0;
   fill: #000;
+}
+
+/* -=Order-form=- */
+
+.order-form{
+
+}
+.modal-text{
+  margin-bottom: 12px;
+  font-weight: var(--bold-font);
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  }
+
+.form-field{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-lable{
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+}
+.form-input{
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;\
 }
