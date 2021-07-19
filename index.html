@@ -434,7 +434,6 @@
             </form>
       </div>
   </footer>
-
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close class="close-button">
@@ -442,10 +441,8 @@
             <use href="./images/svg/sprite.svg#icon-cross"></use>
           </svg>
         </button>
-       
         <form class="order-form" autocomplete="off">
           <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
-         
           <div class="form-field">
             <label class="form-lable" for="username">Имя</label>
             <span class="input-field">
@@ -455,7 +452,6 @@
                 </svg>
             </span>
           </div>
-
           <div class="form-field">
             <label class="form-lable" for="phone">Телефон</label>
               <input class="form-input" type="tel" id="phone" name="phone" maxlength="19" required>
@@ -463,7 +459,6 @@
                   <use href="./images/svg/sprite.svg#icon-form-phone"></use>
                 </svg>
           </div>
-
           <div class="form-field">
             <label class="form-lable" for="email">Почта</label>
               <input class="form-input" type="email" id="email" name="email" required>
@@ -471,45 +466,22 @@
                   <use href="./images/svg/sprite.svg#icon-form-email"></use>
                 </svg>
           </div>
-
           <div class="form-field">
             <label class="form-lable" for="comment">Комментарий</label>
             <textarea class="form-textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
           </div>
-
-
-
-
-
           <div class="form-checkbox">
-            <label class="label"  for="agreement">
+            <label class="check-label"  for="agreement">
               <input class="checkbox  visually-hidden" type="checkbox" name="agreement" value="agreement" id="agreement">
-              <span class="icon"></span>
+              <span class="check-icon"></span>
               Соглашаюсь с рассылкой и принимаю &nbsp;<a class="form-check-link" href="#">Условия договора</a>
             </lable>
             </div>
-
           <button type="submit" class="form-sub-button" aria-label="Отправить">Отправить</button>
         </form>
       </div>
     </div>
 
-
-
-
-
-
-
-
     <script src="./js/modal.js"></script>
-    <script>
-      (() => {
-        document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-          e.preventDefault();
-
-          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
-        });
-      })();
-    </script>
   </body>
 </html>
